@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="cmaster.css" type="text/css" media="screen">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+		<title>Buy</title>
+	</head>
+	<body>
+		<div class="stock">
+			<h1>Browse Our Selection</h1>
+			<p>Select A Genre To Begin</p>
+			<div class="imgs">
+				<img src="icon1.png" alt=""/>	
+				<img src="icon2.png" alt=""/>	
+				<img src="icon3.png" alt=""/>	
+				<img src="icon5.png" alt=""/>	
+				<img src="icon4.png" alt=""/>	
+				<img src="icon6.png" alt=""/>	
+			</div>
+			<p id="load">Loading Items...</p>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script charset="utf-8">
+		$(document).ready(function(){
+			$('#load').slideUp(0);
+			$("img").click(function(){
+				$(this).siblings().hide(200);
+				$('#load').slideDown(300);
+				$('#load').text('Loading Items...');
+				setTimeout(function() {
+					$('#load').text('Not Available In Template');
+					$('.imgs img').show(400);
+				}, 2000);
+			});
+		});	
+	</script>
+</html>

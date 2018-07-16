@@ -1,0 +1,31 @@
+*{
+font-family: 'Raleway', sans-serif;
+margin:0px;
+padding:0px;
+}
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	flex-direction:column;
+	height:100vh;
+	padding:10px;
+	box-sizing:border-box;
+}
+h1{
+	color:#adc65f;
+	font-size:50px;
+	margin-bottom:10px;
+}
+img{
+	width:100px;
+	cursor:pointer;
+	margin-top:20px;
+}
+p{
+	color:#5a5a5a;
+}
+#load{
+	margin-top:20px;
+}
